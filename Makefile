@@ -92,7 +92,7 @@ DOCKERIZE =
 IMPLS = ada ada.2 awk bash basic bbc-basic c chuck clojure coffee common-lisp cpp crystal cs d dart \
 	elisp elixir elm erlang es6 factor fantom forth fsharp go groovy gnu-smalltalk \
 	guile haskell haxe hy io java js julia kotlin livescript logo lua make mal \
-	matlab miniMAL nasm nim objc objpascal ocaml perl perl6 php picolisp pike plpgsql \
+	matlab miniMAL mypython nasm nim objc objpascal ocaml perl perl6 php picolisp pike plpgsql \
 	plsql powershell ps python python.2 r racket rexx rpython ruby rust scala scheme skew \
 	swift swift3 swift4 swift5 tcl ts vala vb vhdl vimscript wasm wren yorick
 
@@ -168,6 +168,8 @@ basic_STEP_TO_PROG_qbasic = basic/$($(1))
 
 clojure_STEP_TO_PROG_clj  = clojure/target/$($(1)).jar
 clojure_STEP_TO_PROG_cljs = clojure/src/mal/$($(1)).cljc
+
+mypython_STEP_TO_PROG = mypython/$($(1)).py
 
 haxe_STEP_TO_PROG_neko   = haxe/$($(1)).n
 haxe_STEP_TO_PROG_python = haxe/$($(1)).py
